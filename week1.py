@@ -1,7 +1,7 @@
 name = input("имя?")
-hours = int(input("сколько часов?"))
-perhour = int(input("ставка?"))
-if hours <= 8:
-    print(f"зарплата {name} : {hours * perhour}")
-elif hours >8:
-    print (f"зарплата  {name}:  {(hours - 8) * perhour * 1.5 + (8 * perhour)}")
+sold = int(input("сколько продаж?"))
+plan = int(input("план продаж?"))
+if sold < plan:
+    print("ПЛАН не выполнен!")
+elif sold >= plan:
+    print (f"План выполнен  {name}:  {(sold/plan)*100}" , "%")
