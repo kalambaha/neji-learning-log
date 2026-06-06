@@ -1,12 +1,10 @@
-name = input("имя?")
-sold = int(input("продаж?"))
-time = int(input("time?"))
-error = int(input("errors?"))
-if sold>=15 and time <=5 and error==0:
-    print (f"{name}- status TOP")
-elif sold>=10 and time <=10 and error <= 1:
-    print (f"{name}- status GOOD")
-elif sold>=5 and error <= 3:
-    print (f"{name}- status NORMA")
+name = input("name?")
+month = int(input("how many?"))
+deal = int(input("deals?"))
+erors = input("erors? yes no -")
+if month>=6 and deal>=20 and erors != "yes":
+    print ("допущен к важному аккаунту")
+elif month>=3 and deal>=10:
+    print ("допущен к стандартному аккаунту") 
 else:
-    print(f"{name}- status Trouble")
+    print("требует дополнительного обучения")  
